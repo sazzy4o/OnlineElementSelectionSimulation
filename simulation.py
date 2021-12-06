@@ -188,11 +188,11 @@ Round(5,3)
 # 6: end for
 # 7: return Q
 
-def Online_CSG(round:Round):
-    for e in round.stream():
-        if round.g(e) > 0:
-            round.accept(e)
-    return round
+def Online_CSG(sim_round:Round):
+    for e in sim_round.stream():
+        if sim_round.g(e) > 0:
+            sim_round.accept(e)
+    return sim_round
 
 Online_CSG(Round(5,3))
 # %%
@@ -208,11 +208,11 @@ Online_CSG(Round(5,3))
 # 7: end while
 # 8: return Q
 
-def Streaming_CSG(round:Round,tau:float):
-    for e in round.stream():
-        if round.g(e) >= tau:
-            round.accept(e)
-    return round
+def Streaming_CSG(sim_round:Round,tau:float):
+    for e in sim_round.stream():
+        if sim_round.g(e) >= tau:
+            sim_round.accept(e)
+    return sim_round
 
 #%%
 def Brute_Force_Optimal(round:Round):
