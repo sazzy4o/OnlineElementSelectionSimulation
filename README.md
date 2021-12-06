@@ -1,5 +1,23 @@
 # OnlineElementSelectionSimulation
 
+## Dependencies:
+Dependencies are included in:
+```
+requirements.txt
+```
+
+## Simulation
+Run the simulation as a VS Code IPython Notebook:
+```
+simulation.py
+```
+
+## Analysis
+Run VS Code IPython Notebook to do analysis and generate figures and tables:
+```
+analysis.py
+```
+
 ## Data
 The data is available in the `data` folder
 
