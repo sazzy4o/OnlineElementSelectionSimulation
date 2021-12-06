@@ -208,7 +208,7 @@ Online_CSG(Round(5,3))
 # 7: end while
 # 8: return Q
 
-def Streaming_CSG(round:Round,tau=5):
+def Streaming_CSG(round:Round,tau:float):
     for e in round.stream():
         if round.g(e) >= tau:
             round.accept(e)
